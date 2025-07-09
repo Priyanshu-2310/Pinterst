@@ -1,0 +1,11 @@
+# Node modules
+node_modules/
+
+# Environment variables
+.env
+
+# Tailwind generated output
+public/css/output.css
+
+# Logs
+*.log

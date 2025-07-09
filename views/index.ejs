@@ -1,0 +1,45 @@
+<% include ./partials/header.ejs %>
+
+<div class="h-screen w-full bg-zinc-100 flex items-center justify-center">
+  <div class="w-[370px] bg-white rounded-xl px-5 py-6 shadow-md">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Pinterest-logo.png" alt="Pinterest" class="w-10 mx-auto mb-3" />
+    <h1  class="text-center text-2xl text-[gilroy] tracking-tighter text-zinc-800">Welcome to Pinterest</h1>
+
+    <form class="mt-8 space-y-3" action="/login" method="POST">
+     <!-- Change `name="email"` to `name="username"` -->
+<input class="block border rounded-md text-sm w-full px-3 py-2" type="text" name="username" placeholder="Username" required />
+<input class="block border rounded-md text-sm w-full px-3 py-2" type="password" name="password" placeholder="Password" required />
+
+
+      <a href="#" class="text-sm text-[#26516C] hover:underline block text-right">Forgot your password?</a>
+
+      <input class="block w-full mt-1 px-3 py-2 bg-red-600 text-white font-medium cursor-pointer rounded-full hover:bg-red-700 transition" type="submit" value="Log in" />
+    </form>
+
+    <div class="flex items-center my-4">
+      <hr class="flex-grow border-zinc-300" />
+      <span class="mx-2 text-sm text-zinc-500">OR</span>
+      <hr class="flex-grow border-zinc-300" />
+    </div>
+
+   
+
+    <button class="flex cursor-pointer items-center justify-center gap-2 w-full mt-2 border px-4 py-2 rounded-md hover:bg-zinc-100 transition">
+      <img class="w-5 h-5" src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-512.png" alt="Google Logo" />
+      <span class="text-sm text-zinc-700 text-center">Continue with Google</span>
+    </button>
+
+    <p class="text-[11px] text-center mt-4 text-zinc-500">
+      By continuing, you agree to Pinterest's
+      <a href="#" class="underline">Terms of Service</a> and acknowledge you've read our
+      <a href="#" class="underline">Privacy Policy</a>. <a href="#" class="underline">Notice at collection</a>.
+    </p>
+
+    <div class="text-center mt-3 text-sm">
+      <p>Not on Pinterest yet? <a href="/register" class="text-red-600 font-medium hover:underline">Sign up</a></p>
+      <p class="mt-1">Are you a business? <a href="#" class="font-medium hover:underline">Get started here!</a></p>
+    </div>
+  </div>
+</div>
+
+<% include ./partials/footer.ejs %>

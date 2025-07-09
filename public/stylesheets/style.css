@@ -1,0 +1,23 @@
+*{
+  
+  font-family: 'Gilroy Regular', sans-serif;
+
+  box-sizing: border-box;
+}
+
+
+@font-face {
+  font-family: 'gilroy';
+  src: url('../font/Gilroy-Regular.ttf');
+}
+
+/* Hide number input arrows in all browsers */
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield; /* Firefox */
+}

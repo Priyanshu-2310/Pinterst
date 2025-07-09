@@ -1,0 +1,36 @@
+<% include ./partials/header.ejs %>
+
+<div class="h-screen w-full bg-zinc-100 flex items-center justify-center">
+  <div class="w-[370px] bg-white rounded-xl px-5 py-6 shadow-md">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Pinterest-logo.png" alt="Pinterest" class="w-10 mx-auto mb-3" />
+    <h1  class="text-center text-2xl text-[gilroy] tracking-tighter text-zinc-800">Create Your Account?</h1>
+
+    <form class="mt-8 space-y-3" action="/register" method="POST">
+      <input class="block border rounded-md text-sm w-full px-3 py-2" type="text" name="username" placeholder="Username" required />
+      <input class="block border rounded-md text-sm w-full px-3 py-2" type="text" name="name" placeholder="Enter Your Name" required />
+      <input class="block border rounded-md text-sm w-full px-3 py-2" type="email" name="email" placeholder="Email" required />
+      <input class="block border rounded-md text-sm w-full px-3 py-2 no-arrows" type="number" name="contact" placeholder="Contact" required />
+      <input class="block border rounded-md text-sm w-full px-3  py-2" type="password" name="password" placeholder="Password" required />
+
+
+      <input class="block w-full mt-4 px-3 py-2 bg-red-600 text-white font-medium cursor-pointer rounded-full text-sm  hover:bg-red-700 transition" type="submit" value="Create Your Account" />
+    </form>
+
+  
+
+   
+
+  
+    <p class="text-[11px] text-center mt-4 text-zinc-500">
+      By continuing, you agree to Pinterest's
+      <a href="#" class="underline">Terms of Service</a> and acknowledge you've read our
+      <a href="#" class="underline">Privacy Policy</a>. <a href="#" class="underline">Notice at collection</a>.
+    </p>
+
+    <div class="text-center mt-3 text-sm">
+      <p>Already Have An Account? <a href="/" class="text-red-600 font-medium hover:underline">Log In</a></p>
+    </div>
+  </div>
+</div>
+
+<% include ./partials/footer.ejs %>
